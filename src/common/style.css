@@ -1,0 +1,370 @@
+/* BASIC STYLES */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+/* NAV BAR */
+#nav_bar {
+  float: right;
+}
+
+#nav_bar li {
+  display: inline-block;
+  padding: 8px;
+}
+
+#nav_bar #sign_in {
+  background: #4887ef;
+  margin-right: 25px;
+  padding: 7px 15px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.nav-links {
+  color: #404040;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li.nav-links a:hover {
+  text-decoration: underline;
+}
+
+#sign_in:hover {
+  box-shadow: 1px 1px 5px #999;
+  border: none;
+}
+
+#sign_in {
+  color: #fff;
+  border: none;
+}
+
+/* GOOGLE AREA */
+.google #google_logo {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  clear: both;
+  padding-top: 112px;
+  padding-bottom: 20px;
+}
+
+.form {
+  text-align: center;
+}
+
+#form-search {
+  width: 500px;
+  line-height: 32px;
+  padding: 20px 10px;
+  font-size: 16px;
+}
+
+.form #form-search {
+  padding: 0 8px;
+}
+
+#google_search {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+
+#im_feeling_lucky {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+#form-search:hover {
+  border-color: #e4e4e4;
+  padding-top: 0;
+}
+
+.buttons {
+  text-align: center;
+  padding-top: 30px;
+  /* margin-bottom: 500px; */
+  height: 50px;
+}
+
+/* FOOTER */
+footer {
+  background: #f2f2f2;
+  border-top: solid 2px #e4e4e4;
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 0;
+  width: 100%;
+  height: 10%;
+
+}
+
+footer ul li {
+  display: inline;
+  color: #666666;
+  font-size: 14px;
+  padding: 13px;
+}
+
+footer ul {
+  float: left;
+  padding: 1px;
+}
+
+footer ul a:hover {
+  text-decoration: underline;
+}
+
+.footer-right {
+  float: right;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 400px) {
+
+  li.nav-links a {
+    display: none;
+  }
+
+  #google_logo {
+    padding: 0;
+  }
+
+  .buttons {
+    display: none;
+  }
+
+  #form-search {
+    width: 80%;
+
+  }
+
+  footer {
+    bottom: 0;
+  }
+
+  footer ul {
+    float: none;
+    padding-bottom: 2px;
+
+  }
+
+  .footer-left {
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+
+  }
+
+  .footer-right {
+    float: none;
+    text-align: center;
+
+  }
+}
+
+@media screen and (max-width: 565px) {
+
+  li.nav-links a {
+    display: none;
+  }
+
+
+  #google_logo {
+    padding: 0;
+  }
+
+  .buttons {
+    display: none;
+  }
+
+  #form-search {
+    width: 80%;
+
+  }
+
+  footer {
+    /*    bottom: 0;
+     postion: absolute; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+  }
+
+
+
+  footer ul {
+    float: none;
+    padding-bottom: 2px;
+
+  }
+
+  .footer-left {
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+
+  }
+
+  .footer-right {
+    float: none;
+    text-align: center;
+
+  }
+
+}
+
+.img-option {
+  height: 20px;
+  padding-right: 10px;
+}
+
+.error {
+  /* display: none; */
+  color: red;
+}
+
+/* .avatar {
+  width: 30px;
+  height: 30px;
+} */
+.container {
+  width: 320px;
+  height: 480px;
+  background: #fff;
+  box-shadow: 0 10px 15px rgba(179, 179, 179, 0.7);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+
+.container h2 {
+  color: #0A66C3;
+  font-size: 1.6rem;
+}
+
+.container h2 i {
+  font-size: 1.8rem;
+  padding-left: 0.1rem;
+}
+
+.intro-text p {
+  font-size: 1.8rem;
+  padding-top: 0.3rem;
+}
+
+.input {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 0.7rem;
+}
+
+/* .input input {
+  /* width: 100%;
+  height: 50px;
+  padding-top: 1.1rem;
+  padding-left: 9px;
+  outline: none;
+  border: 1px solid #8c8c8c;
+  border-radius: 3px;
+  transition: 0.2s; */
+  /* padding-left: 9px; */
+
+
+/* .input label {
+  position: absolute;
+  top: 30%;
+  left: 10px;
+  font-size: 1.1rem;
+  color: #8c8c8c;
+  transition: 0.2s;
+} */
+
+/* .input input:focus~label,
+.input input:valid~label {
+  top: 10%;
+  font-size: 0.8rem;
+  color: #000;
+}
+
+.input input:focus {
+  border-width: 2px;
+  border-color: #0A66C3;
+}
+
+.forgot-pass-link {
+  width: 140px;
+  padding: 0.2rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bolder;
+  color: #0A66C3;
+  transition: 0.3s;
+  border-radius: 12px;
+}
+
+.forgot-pass-link:hover {
+  background: rgba(10, 102, 195, 0.3);
+}
+
+.join-link {
+  text-align: center;
+}
+
+.join-link a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: #0A66C3;
+} */
